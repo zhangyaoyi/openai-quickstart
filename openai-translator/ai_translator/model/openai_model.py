@@ -17,7 +17,7 @@ class OpenAIModel(Model):
         attempts = 0
         while attempts < 3:
             try:
-                if self.model == "gpt-3.5-turbo":
+                if self.model == "gpt4o":
                     response = self.client.chat.completions.create(
                         model=self.model,
                         messages=[
